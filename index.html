@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="mx-auto bg-slate-100 w-[80%]">
+
+  <div class="my-8">
+    <h1 class="text-4xl font-medium text-center">Order Percentage Calculation</h1>
+
+    <table class="mt-8 w-full text-center border rounded shadow">
+      <thead class="bg-slate-50">
+        <tr class="border-b">
+          <th class="py-4">Srl.</th>
+          <th class="py-4">Date</th>
+          <th class="py-4">Order Count</th>
+          <th class="py-4">Order Amount (tk)</th>
+          <th class="py-4">Amount/Count</th>
+          <th class="py-4">Product Count</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white">
+        <tr>
+          <td class="py-4 border-b">1</td>
+          <td class="py-4 border-b">2-Mar-2023 : Thu</td>
+          <td class="py-4 border-b">
+            <span class="js--order-count">6</span>
+            <span id="js--order-percentage-1" class="text-xs"></span>
+          </td>
+          <td class="py-4 border-b">
+            <span class="js--amount-count">2,554</span>
+            <span id="js--amount-percentage-1" class="text-xs"></span>
+          </td>
+          <td class="py-4 border-b">
+            <span class="js--ac-count">1,277</span>
+            <span id="js--ac-percentage-1" class="text-xs"></span>
+          </td>
+          <td class="py-4 border-b">
+            <span class="js--product-count">10</span>
+            <span id="js--product-percentage-1" class="text-xs"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="py-4 border-b">2</td>
+          <td class="py-4 border-b">1-Mar-2023 : Wed</td>
+          <td class="py-4 border-b">
+            <span class="js--order-count">5</span>
+            <span id="js--order-percentage-2" class="text-xs"></span>
+          </td>
+          <td class="py-4 border-b">
+            <span class="js--amount-count">1,457</span>
+            <span id="js--amount-percentage-2" class="text-xs"></span>
+          </td>
+          <td class="py-4 border-b">
+            <span class="js--ac-count">291</span>
+            <span id="js--ac-percentage-2" class="text-xs"></span>
+          </td>
+          <td class="py-4 border-b">
+            <span class="js--product-count">5</span>
+            <span id="js--product-percentage-2" class="text-xs"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="py-4 border-b">3</td>
+          <td class="py-4 border-b">28-Feb-2023 : Tue</td>
+          <td class="py-4 border-b">
+            <span class="js--order-count">9</span>
+            <span id="js--order-percentage-3" class="text-xs"></span>
+          </td>
+          <td class="py-4 border-b">
+            <span class="js--amount-count">2,093</span>
+            <span id="js--amount-percentage-3" class="text-xs"></span>
+          </td>
+          <td class="py-4 border-b">
+            <span class="js--ac-count">933</span>
+            <span id="js--ac-percentage-3" class="text-xs"></span>
+          </td>
+          <td class="py-4 border-b">
+            <span class="js--product-count">5</span>
+            <span id="js--product-percentage-3" class="text-xs"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="py-4 border-b">3</td>
+          <td class="py-4 border-b">28-Feb-2023 : Tue</td>
+          <td class="py-4 border-b">
+            <span class="js--order-count">12</span>
+            <span id="js--order-percentage-4" class="text-xs"></span>
+          </td>
+          <td class="py-4 border-b">
+            <span class="js--amount-count">2,593</span>
+            <span id="js--amount-percentage-4" class="text-xs"></span>
+          </td>
+          <td class="py-4 border-b">
+            <span class="js--ac-count">835</span>
+            <span id="js--ac-percentage-4" class="text-xs"></span>
+          </td>
+          <td class="py-4 border-b">
+            <span class="js--product-count">5</span>
+            <span id="js--product-percentage-4" class="text-xs"></span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
